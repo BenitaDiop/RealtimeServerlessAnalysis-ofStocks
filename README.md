@@ -43,7 +43,7 @@ def lambda_handler(event, context):
 
 ```
 
-!()[https://github.com/BenitaDiop/RealtimeServerlessAnalysis-ofStocks/blob/master/assets/datcollector.png]
+![](https://github.com/BenitaDiop/RealtimeServerlessAnalysis-ofStocks/blob/master/assets/datcollector.png)
 
 
 
