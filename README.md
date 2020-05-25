@@ -13,7 +13,7 @@
 - [x] `data_collector.py`
 
 
-```
+```python
 #!/usr/bin/env python 
 import boto3
 import os
