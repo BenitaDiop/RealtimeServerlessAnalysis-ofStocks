@@ -5,7 +5,7 @@
 ********************
 
 #### Lambda Function URL 
-- [x] (API Endpoint)[www.google.com]
+- [x] [API Endpoint](www.google.com)
 
 
 
