@@ -14,7 +14,6 @@
 
 
 ```python
-#!/usr/bin/env python 
 import boto3
 import os
 import subprocess
@@ -34,18 +33,22 @@ tk = ['FB', 'SHOP',
 
 
 def lambda_handler(event, context):   
-    tk_list = tk.split()
+    tk_list = tk_list.split()
     fire = boto3.client("firehose", "us-east-1")    
+    
     for i in tk_list:
-	data = yf.download(tk, start="2020-05-14", end="2020-05-15", interval = "1m",group_by = 'ticker')
+        
+        data = yf.download(tk, start="2020-05-14", end="2020-05-15", interval = "1m",group_by = 'ticker')
+        
         for datetime, rows in data[i].iterrows():
             jsonstr = json.dumps({"high": rows.High, "low": rows.Low, "ts": str(datetime), 'name': i})
             fire.put_record(DeliveryStreamName="DataStreaming", Record={"Data": jsonstr.encode('utf-8')})
 
-    return {
-        'statusCode': 200,
-        'body': json.dumps(f'Completed! Data Recorded into your bucket')
-        }
+        return {
+            'statusCode': 200,
+            'body': json.dumps(f'Completed! Data Recorded into your bucket')
+            } 
+        
 
 ```
 
