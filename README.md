@@ -52,7 +52,7 @@ def lambda_handler(event, context):
 #### AWS Kinesis Firehouse Delivery Stream 
 - [x] Monitoring Page  
 
-![]()
+![](https://github.com/BenitaDiop/RealtimeServerlessAnalysis-ofStocks/blob/master/assets/watch.png)
 
 
 ## Data Analyzer
