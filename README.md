@@ -1,7 +1,7 @@
 # Realtime Severless Analysis of Yahoo Finance Stock Data
 *****************
 
-### Data Collector
+## Data Collector
 ********************
 
 #### Lambda Function URL 
@@ -20,7 +20,7 @@
 ```
 
 
-### Data Tranformer
+## Data Tranformer
 ********************
 #### AWS Kinesis Firehouse Delivery Stream 
 - [x] Monitoring Page  
@@ -28,16 +28,16 @@
 
 
 
-### Data Analyzer
+## Data Analyzer
 ********************
-- [x] `query.sql
+- [x] `query.sql`
 
 ```
 !#usr/bin/env SQL
 
 ```
 
-- [x] `results.csv
+- [x] `results.csv`
 
 
 
@@ -49,45 +49,3 @@ docker run -v $(pwd):/app local_lambda python lambda_function.py
 docker build -t deployment -f Dockerfile.deployment_artifact .
 docker run -v $(pwd):/app/artifact deployment
 ```
-
-
-### Requirements.txt
-`yfinance==0.1.54`
-
-
-```python
-import boto3
-import os
-import subprocess
-import sys
-
-subprocess.check_call([sys.executable, "-m", "pip", "install", "--target", "/tmp", 'yfinance'])
-sys.path.append('/tmp')
-import yfinance 
-
-def lambda_handler(event, context):
-    pass
-
-
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
