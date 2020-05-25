@@ -14,7 +14,7 @@
 
 
 ```
-!#usr/bin/env python 
+#!usr/bin/env python 
 import boto3
 import os
 import subprocess
