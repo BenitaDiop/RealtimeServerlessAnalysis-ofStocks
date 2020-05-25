@@ -5,7 +5,7 @@
 ********************
 
 #### Lambda Function URL 
-- [x] [API Endpoint](www.google.com)
+- [x] [API Endpoint](https://vlmmfo9shb.execute-api.us-east-1.amazonaws.com/default/DataCollector)
 
 
 
