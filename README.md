@@ -70,7 +70,7 @@ def lambda_handler(event, context):
 
 
 ```json
-Name	High	Hour	Timestamp	Recurrence
+Name	High	Hour	Timestamp	     Recurrence
 BYND	137.97	09	05/14/2020 09:39:00	1
 BYND	139.56	10	05/14/2020 10:31:00	1
 BYND	141.0	11	05/14/2020 11:15:00	1
