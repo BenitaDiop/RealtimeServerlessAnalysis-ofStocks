@@ -52,7 +52,7 @@ def lambda_handler(event, context):
 #### AWS Kinesis Firehouse Delivery Stream 
 - [x] Monitoring Page  
 
-
+![]()
 
 
 ## Data Analyzer
