@@ -69,10 +69,16 @@ def lambda_handler(event, context):
 
 
 
-```
-docker build -t local_lambda .
-docker run -v $(pwd):/app local_lambda python lambda_function.py
-
-docker build -t deployment -f Dockerfile.deployment_artifact .
-docker run -v $(pwd):/app/artifact deployment
+```json
+Name	High	Hour	Timestamp	Recurrence
+BYND	137.97	09	05/14/2020 09:39:00	1
+BYND	139.56	10	05/14/2020 10:31:00	1
+BYND	141.0	11	05/14/2020 11:15:00	1
+BYND	138.24	12	05/14/2020 12:57:00	1
+BYND	137.79	13	05/14/2020 13:00:00	1
+BYND	135.73	14	05/14/2020 14:12:00	1
+BYND	135.85	15	05/14/2020 15:54:00	1
+DDOG	67.25	09	05/14/2020 09:32:00	1
+DDOG	66.55	10	05/14/2020 10:09:00	1
+DDOG	65.0	11	05/14/2020 11:05:00	4
 ```
