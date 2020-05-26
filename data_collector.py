@@ -1,3 +1,5 @@
+
+```python
 from datetime import date
 import json
 import boto3
@@ -23,3 +25,4 @@ def lambda_handler(event, context):
             fh.put_record(DeliveryStreamName="stream", Record={"Data": i.encode('utf-8')}) 
             
     return { 'statusCode': 200, 'body': json.dumps(f'Ok!') }
+        
