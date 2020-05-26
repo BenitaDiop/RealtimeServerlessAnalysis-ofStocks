@@ -62,7 +62,7 @@ def lambda_handler(event, context):
 - [x] `query.sql`
 
 ```
-!#usr/bin/env SQL
+
 
 ```
 
