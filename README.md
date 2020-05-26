@@ -1,5 +1,7 @@
 # Realtime Severless Analysis of Yahoo Finance Stock Data
 *****************
+A Kinesis Firehose Delivery Stream, DataTransformer, that has a lambda function which transforms records and streams it into an S3 bucket. Another Lambda function, DataCollector, that is triggered from a simple URL call and grabs stock price data and places it into the delivery defined in the DataTransformer. Configure AWS Glue to point to the S3 Bucket. To interactively query the S3 files, DataAnalyzer,  using AWS Athena to gain insight into our streamed data. 
+
 
 ## Data Collector
 ********************
